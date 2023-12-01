@@ -24,7 +24,7 @@ public class GeocodingService {
             .mapNotNull(locationInfoArray -> {
                 if (locationInfoArray != null && locationInfoArray.length > 0) {
                     LocationInfo locationInfo = locationInfoArray[0];
-                    return new LocationInfo(locationInfo.getName(), locationInfo.getLat(), locationInfo.getLon());
+                    return new LocationInfo(locationInfo.getLat(), locationInfo.getLon());
                 }
                 return null;
             });

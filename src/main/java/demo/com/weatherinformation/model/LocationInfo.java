@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class LocationInfo {
-    private String name;
     private double lat;
     private double lon;
 }
